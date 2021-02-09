@@ -1,0 +1,258 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, menu, nav, output,
+ruby, section, summary,
+time, mark, audio, video, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    outline:none;
+    text-decoration: none !important;
+}
+button:focus,
+button:active,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*---------------------------------------
+   General CSS
+-----------------------------------------*/
+
+.Frstheadr{
+    background-color: #95e1d3;
+    padding: 14px;
+}
+.Frstheadr p{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1;
+    color: #ffffff;
+    text-align: left;
+}
+.navbar-nav .nav-item{
+    padding-left: 20px;
+    color: white;
+}
+.mainbanner{
+    background-image: url("../Images/banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bannertext{
+    padding-top: 190px;
+    padding-bottom: 180px;
+    text-align: center;
+}
+.bannertext h1{
+    font-size: 54px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fefefe;
+}
+.bannertext p{
+    font-size: 15px;
+    line-height: 2;
+    color: #e8e8e8;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.bannertext a{
+    background-color: deepskyblue;
+    color: white;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.secondMAin p{
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+    padding-top: 60px;
+}.secondMAin h6{
+     font-size: 30px;
+     font-weight: bold;
+     text-align: center;
+    text-transform: uppercase;
+     color: #333333;
+    padding-top: 10px;
+    padding-bottom: 30px;
+ }
+ .secondMAin h5{
+     font-size: 15px;
+     font-weight: normal;
+     line-height: 1;
+     letter-spacing: normal;
+     text-align: center;
+     color: #999999;
+     padding-top: 10px;
+     padding-bottom: 80px;
+ }
+.crddfr{
+    -webkit-box-shadow: 7px 7px 1px 0px rgba(0, 191, 255, 0.75);
+    -moz-box-shadow:    7px 7px 1px 0px rgba(0, 191, 255, 0.75);
+    box-shadow:         7px 7px 1px 0px rgba(0, 191, 255, 0.75);
+}
+.third{
+    padding-bottom: 100px;
+}
+/*.countersection h4{*/
+    /*font-weight: bold;*/
+    /*color: white;*/
+    /*font-size: 43px;*/
+    /*text-align: center;*/
+/*}*/
+/*.countersection{*/
+    /*background-color: #95e1d3;*/
+    /*padding: 60px 60px;*/
+/*}*/
+/*.countersection p{*/
+    /*text-transform: uppercase;*/
+    /*text-align: center;*/
+/*}*/
+
+.counters {
+    background: lightskyblue;
+    color: #fff;
+    padding: 30px 20px;
+    font-weight: 600;
+}
+
+.counters .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+}
+
+.counters .counter {
+    font-size: 45px;
+    margin: 10px 0;
+}
+.brdr{
+    border-left: 1px solid white;
+}
+.showform{
+    background-color: limegreen;
+    color: white;
+    bottom: 5px;
+    left: 40%;
+    position: relative;
+    /*position: fixed;*/
+    cursor: pointer;
+    width: auto;
+    padding: 10px 100px;
+    margin-top: 10px;
+}
+.form-popup:hover{
+    box-shadow: 0 4px 8px 0 rgba(88, 255, 223, 0.58), 0 6px 20px 0 rgba(45, 232, 247, 0.59);
+}
+.form-popup{
+    padding: 60px 20px;
+    bottom: 0;
+    left: 33%;
+    width: 490px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #cbcbcb;
+    position: relative;
+    margin-bottom: 50px;
+    display: none;
+}
+.form-popup h1,p{
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.form-popup .loginbtn{
+    background-color: green;
+    padding: 14px 202px;
+    margin-top: 10px;
+}
+.form-popup .loginbtn1{
+    background-color: red;
+    padding: 13px 202px;
+    margin-top: 10px;
+}
+.form-popup.loginbtn:hover{
+    opacity: 0.8;
+}
+.form-popup  .loginbtn1:hover{
+    opacity: 0.8;
+}
+.contactForm input[type=text]:focus, .contactForm input[type=password]:focus{
+    background-color: rgba(135, 135, 135, 0.77);
+    outline: none;
+}
+.mainclients{
+    background-image: url("../Images/clientbackground.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mainclients h3{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+    padding-top: 12px;
+    padding-left: 18px;
+}
+.mainclients h6{
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1;
+    color: #333333;
+    padding-top: 8px;
+    padding-left: 18px;
+}
+.mainclients p{
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 100;
+    color: #999999;
+    padding-top: 15px;
+    padding-left: 18px;
+}
+.mainclients h4 h1{
+    text-align: center;
+}
+.mainclients .secondMAin p{
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+    padding-top: 60px;
+}.mainclients .secondMAin h6{
+     font-size: 30px;
+     font-weight: bold;
+     text-align: center;
+     text-transform: uppercase;
+     color: #333333;
+     padding-top: 10px;
+     padding-bottom: 30px;
+ }
+ .mainnewcard{
+     padding-top: 140px;
+ }
